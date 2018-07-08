@@ -1,0 +1,67 @@
+/*
+ Theme Name:   Unite Child
+ Theme URI:    http://sridharb.com/unite-child
+ Description:  Unite Child Theme
+ Author:       Sridhar Bala
+ Author URI:   http://sridharb.com
+ Template:     unite
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         purple, light, white, gray, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, responsive-layout, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+ Text Domain:  unite-child
+*/
+.latest-movies{
+    width:100%;
+    margin:0 auto;
+}
+.latest-movies ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+.latest-movies ol li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: #F0D756;
+    padding-left: 58px;
+}
+
+.latest-movies a{
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.latest-movies li:hover{
+    box-shadow:inset -1em 0 #6CD6CC;
+    -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+}
+
+.latest-movies ol li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #6CD6CC;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
